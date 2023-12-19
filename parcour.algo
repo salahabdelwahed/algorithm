@@ -1,0 +1,21 @@
+ALGORITHM Parcours
+VAR
+    str:STRING[50];
+    NV:INTEGER:=0;
+    NM:INTEGER:=0;
+    NC:INTEGER:=0;
+    i:INTEGER;
+BEGIN
+    write("write a string:");
+    read(str);
+    FOR i from 0 to str.length() -1 DO 
+        IF (str[i]==' ')THEN 
+            NM:=NM+1;
+        END_IF 
+        IF(str[i]=='v'OR 'o'OR'u'OR'i'OR'e'OR'V'OR'O'OR'U'OR'E')THEN
+            NV:=NV+1;
+        END_IF
+    END_FOR
+    write("the number of sentence in strings:",NM);
+    write("the number of voyelle in string:",NV);
+END

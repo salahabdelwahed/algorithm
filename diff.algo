@@ -1,0 +1,18 @@
+ALGORITHM comparation_som
+VAR
+    set1 : ARRAY_OF INTEGER[3, 1, 7, 9];
+    set1 : ARRAY_OF INTEGER[2, 4, 1, 9, 3];
+    i,j:INTEGER;
+    sum:INTEGER:=0;
+BEGIN
+    FOR i from 0 to set1.length-1 DO
+        FOR j from 0 to set2.length-1 DO 
+            IF (set1[i]==set2[j]) THEN
+                sum:=sum+set1[i]+set2[j];
+            ELSE
+                write(set1[i],set2[j]);
+            END_IF  
+        END_FOR  
+    END_FOR
+    write("the somme is :",sum);
+END
