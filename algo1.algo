@@ -1,0 +1,11 @@
+FUNCTION  dot_product(v1,v2:INTEGER) : INTEGER
+VAR
+    i:INTEGER;
+    ps:INTEGER:=0;
+BEGIN
+    FOR i FROM 0 TO v1.length STEP 1  DO
+        ps+=v1[i]*v2[i]
+    END_FOR
+    RETURN ps ;
+END
+
